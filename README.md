@@ -1,3 +1,5 @@
 # pyrxnlp
 
- Simple python wrapper classes for RxNLP suite of APIs.
+This project contains simple python wrapper classes for RxNLP suite of APIs. Note that this is still work in progress.
+
+
