@@ -11,7 +11,7 @@ def set_api_key(key):
     apikey = key
 
     if key in "your_api_key":
-        print("Please set your API Key and Try Again")
+        print("Please set your API Key and Try Again!")
         return False
 
     return True
