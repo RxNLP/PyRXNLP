@@ -4,3 +4,4 @@ This project contains simple python wrapper classes for RxNLP suite of APIs. Not
 
 ## Available Wrappers
 - [Sentence Clustering](https://github.com/RxNLP/pyrxnlp/tree/master/client)
+- [Text Similarity](https://github.com/RxNLP/pyrxnlp/tree/master/client)
