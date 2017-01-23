@@ -56,6 +56,7 @@ def print_similarities(label,data):
     print("Dice similarity {0}".format(data['dice']))
     print("Cosine similarity {0}".format(data['cosine']))
     print("Jaccard similarity {0}".format(data['jaccard']))
+    print("Average {0}".format(data['average']))
 
 
 # first set api key
