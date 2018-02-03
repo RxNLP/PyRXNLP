@@ -8,5 +8,6 @@ This project contains simple python wrappers for RxNLP suite of APIs. The APIs a
 
 You will have to replace `your_api_key` with the actual API Key. For instructions on how to obtain your API key please refer to [our instructions](http://www.rxnlp.com/api-key/). 
 
-For a list of our NLP API endpoints, please checkout the [RxNLP website](http://www.rxnlp.com/api-reference/).
+
+For a list of our NLP API endpoints, please check the [RxNLP website](http://www.rxnlp.com/api-reference/).
  
