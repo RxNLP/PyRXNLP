@@ -1,3 +1,3 @@
 ============
-pyrxnlp - Tools for text mining and NLP
+pyrxnlp -   Tools for text mining and NLP
 ============
