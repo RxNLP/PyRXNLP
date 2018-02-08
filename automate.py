@@ -50,8 +50,9 @@ elif version is not None:
 
     os.system ("git tag {0}".format(version))
     os.system ("git push origin {0}".format(version))
-    os.system ("rm dist/*")
-    os.system ("python setup.py sdist")
+    os.putenv ("version",version)
+    os.system ("rm -r dist/*")
+    os.system ("python setup.py sdist".format(version))
     os.system ("twine upload dist/*")
 
 else:
