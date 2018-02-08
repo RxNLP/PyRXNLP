@@ -20,7 +20,7 @@
 3. Start coding. Here's an example of **Clustering Sentences**
 
 ```python
-	apikey = "your_api_key"
+   apikey = "your_api_key"
 
    # Cluster from a list of sentences
     list_of_sentences = [
