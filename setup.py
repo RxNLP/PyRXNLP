@@ -1,11 +1,17 @@
 from setuptools import setup, find_packages
+from subprocess import Popen, PIPE
 
+
+def tag():
+    process = Popen (["git", "describe", "--abbrev=0", "--tags"], stdout=PIPE)
+    tag=process.communicate()[0].strip()
+    tag=bytes.decode(tag)
+    return tag
 
 def readme():
     readme_short = """
-    PyRXNLP - NLP and Text Mining tools.
-
-
+    PyRXNLP - NLP and Text Mining tools for building intelligent data-driven applications.
+    
 
     ### Features:
      - Topics extraction
@@ -19,7 +25,7 @@ def readme():
 
 setup(
     name="pyrxnlp",
-    version="0.1.1",
+    version=tag(),
     packages=find_packages(),
     description='Natural language processing tools',
     long_description=readme(),
@@ -34,7 +40,7 @@ setup(
     author_email='kavita.ganesan@rxnlp.com',
     license='LICENSE',
     url='https://github.com/RxNLP/pyrxnlp',
-    download_url='https://github.com/RxNLP/pyrxnlp/archive/v0.1.tar.gz',
+    download_url='https://github.com/RxNLP/pyrxnlp/archive/{0}.tar.gz'.format(tag()),
     keywords=['Sentence Clustering', 'Topics Extraction',
               'Opinosis Summarization', 'Text Similarity'],
     install_requires=[

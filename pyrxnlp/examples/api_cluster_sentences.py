@@ -39,7 +39,7 @@ if __name__ == '__main__':
 
     # Cluster from a text file
     abspath = os.path.dirname(os.path.abspath(__file__))
-    file = abspath + "/../../corpora/clusteringsentences.txt"
+    file = abspath + "/../corpora/clusteringsentences.txt"
     clustering = ClusterSentences(apikey)
     clusters = clustering.cluster_from_textfile(file)
     if clusters is not None:
