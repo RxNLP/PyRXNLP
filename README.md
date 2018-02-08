@@ -1,13 +1,67 @@
-# pyrxnlp - Suite of NLP Tools
-
-This project contains simple python wrappers for RxNLP suite of APIs. The APIs allow you to perform various NLP tasks such as sentence clustering or short text clustering and text similarity using jaccard, cosine and dice. The wrappers can be used as is or can be modified to suit your needs. 
-
-## NLP Wrappers
-- [Sentence Clustering](https://github.com/RxNLP/pyrxnlp/tree/master/client)
-- [Text Similarity](https://github.com/RxNLP/pyrxnlp/tree/master/client)
-
-You will have to replace `your_api_key` with the actual API Key. For instructions on how to obtain your API key please refer to [our instructions](http://www.rxnlp.com/api-key/). 
+## PyRXNLP - Text-mining tools for building intelligent data-driven applications.
 
 
-For a list of our NLP API endpoints, please check the [RxNLP website](http://www.rxnlp.com/api-reference/).
- 
+
+## Features:
+- Topics extraction
+- Sentence clustering - with cluster labels
+- Opinosis opinion summarization
+
+
+## Getting Started:
+
+1. Install pyrxnlp
+  ```
+  pip install pyrxnlp
+  ```
+
+2. If you are using the cloud APIs, get your [API Key](http://www.rxnlp.com/api-key/)
+
+3. Start coding. Here's an example of **Clustering Sentences**
+
+```python
+	apikey = "your_api_key"
+
+   # Cluster from a list of sentences
+    list_of_sentences = [
+        "the sky is so high",
+        "the sky is blue",
+        "fly high into the sky.",
+        "the trees are really tall",
+        "I love the trees",
+        "trees make me happy",
+        "the sun is shining really bright"]
+    
+    # initialize sentence clustering
+    clustering = ClusterSentences (apikey)
+    
+    # generate clusters and print 
+    clusters = clustering.cluster_from_list (list_of_sentences)
+    if clusters is not None:
+        print ("------------------------------")
+        print ("Clusters from a list of sentences")
+        print ("------------------------------")
+        clustering.print_clusters (clusters)
+
+
+```
+
+You should see output similar to:
+
+```
+------------------------------
+Clusters from a list of sentences
+------------------------------
+Cluster label:  ['sky']
+Cluster scores:  6.571693476432014
+Cluster sentences:  ['fly high into the sky.', 'the sky is so high', 'the sky is blue']
+===
+Cluster label:  ['tree']
+Cluster scores:  6.571693476432014
+Cluster sentences:  ['I love the trees', 'trees make me happy', 'the trees are really tall']
+===
+Cluster label:  ['sentences_with_no_cluster_membership']
+Cluster scores:  0.0
+Cluster sentences:  ['0006:the sun is shining really bright']
+===
+```
