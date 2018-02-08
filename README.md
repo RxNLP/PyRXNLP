@@ -15,7 +15,7 @@
   pip install pyrxnlp
   ```
 
-2. If you are using the cloud APIs, get your [API Key](http://www.rxnlp.com/api-key/)
+2. Get your [API Key](http://www.rxnlp.com/api-key/). Note that API keys are only needed to access the APIs within  `pyrxnlp.api` package.
 
 3. Start coding. Here's an example of **Clustering Sentences**
 
