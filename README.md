@@ -17,9 +17,13 @@
 
 2. Get your [API Key](http://www.rxnlp.com/api-key/). Note that API keys are only needed to access the APIs within  `pyrxnlp.api` package.
 
-3. Start coding. Here's an example of **Clustering Sentences**
+3. Start coding. Here's an example of **Clustering Sentences**. 
 
 ```python
+   
+   import os
+   from pyrxnlp.api.cluster_sentences import ClusterSentences
+
    apikey = "your_api_key"
 
    # Cluster from a list of sentences
@@ -65,6 +69,9 @@ Cluster scores:  0.0
 Cluster sentences:  ['0006:the sun is shining really bright']
 ===
 ```
+## Code Examples & Tutorials
+- You will find working examples under [pyrxnlp/examples/](https://github.com/RxNLP/PyRXNLP/tree/master/pyrxnlp/examples)
+
 ## Contributing 
 
 ### Reporting issues
