@@ -65,3 +65,9 @@ Cluster scores:  0.0
 Cluster sentences:  ['0006:the sun is shining really bright']
 ===
 ```
+## Contributing 
+
+### Reporting issues
+
+When reporting issues please use "Github Issues" and include as much detail as possible about your operating system, python version and API endpoint used if applicable. Whenever possible, please also include a brief, self-contained code example that demonstrates the problem. Visuals are appreciated!
+
