@@ -1,11 +1,10 @@
-## PyRXNLP - Text-mining tools for building intelligent data-driven applications.
+## PyRXNLP - Python SDK for RxNLP's Text Mining APIs 
 
+Build intelligent data-driven applications with minimal effort. 
 
-
-## Features:
-- Topics extraction
-- Sentence clustering - with cluster labels
-- Opinosis opinion summarization
+## APIs 
+- [Topics extraction](http://www.rxnlp.com/api-reference/topics-and-themes-api-reference/)
+- [Sentence clustering](http://www.rxnlp.com/sentence-clustering-api/) - with cluster labels
 
 
 ## Getting Started:
@@ -15,7 +14,7 @@
   pip install pyrxnlp
   ```
 
-2. Get your [API Key](http://www.rxnlp.com/api-key/). Note that API keys are only needed to access the APIs within  `pyrxnlp.api` package.
+2. Get your [API Key](http://www.rxnlp.com/api-key/). 
 
 3. Start coding. Here's an example of **Clustering Sentences**. 
 
