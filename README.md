@@ -18,11 +18,14 @@ Build intelligent data-driven applications with minimal effort.
 
 3. Start coding. Here's an example of **Clustering Sentences**. 
 
+Replace `your_api_key` with an actual key.
+
 ```python
    
    import os
    from pyrxnlp.api.cluster_sentences import ClusterSentences
 
+   # replace this with your api key (see: http://www.rxnlp.com/api-key/)
    apikey = "your_api_key"
 
    # Cluster from a list of sentences
