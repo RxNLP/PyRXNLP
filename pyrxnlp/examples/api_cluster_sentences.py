@@ -8,6 +8,7 @@
 import os
 from pyrxnlp.api.cluster_sentences import ClusterSentences
 
+# replace this with your api key (see: http://www.rxnlp.com/api-key/)
 apikey = "your_api_key"
 
 if __name__ == '__main__':
