@@ -5,6 +5,10 @@ Build intelligent data-driven applications with minimal effort.
 ## APIs 
 - [Topics extraction](http://www.rxnlp.com/api-reference/topics-and-themes-api-reference/)
 - [Sentence clustering](http://www.rxnlp.com/sentence-clustering-api/) - with cluster labels
+- [HTML2Text](http://rxnlp.com/api-reference/html2text-api/#.W7VaQxNKj64)
+- [Opinion Summarization](https://market.mashape.com/rxnlp/text-mining-and-nlp#opinosis-summaries)
+- [Text Similarity](http://rxnlp.com/text-similarity-api/#.W7VaEBNKj64)
+- [N-Gram Counter](http://rxnlp.com/api-reference/n-gram-and-word-counter-api-reference/#.W7VaJhNKj64)
 
 
 ## Getting Started:
