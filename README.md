@@ -74,7 +74,32 @@ Cluster label:  ['sentences_with_no_cluster_membership']
 Cluster scores:  0.0
 Cluster sentences:  ['0006:the sun is shining really bright']
 ===
+
 ```
+
+Here's an example for computing Text Similarity:
+
+```python
+from pyrxnlp.api.text_similarity import TextSimilarity
+
+apikey = "your_api_key"
+
+
+str1 = "this is, the first string for my test!"
+str2 = "this ## is the second string for my testing...."
+
+# Example 1: show cosine,dice,jaccard similarity with cleaning
+t = TextSimilarity(apikey, True)
+t.show_similarity(str1, str2)
+print("====\n")
+
+#Example 2: show cosine,dice,jaccard similarity with no cleaning
+t = TextSimilarity(apikey, False)
+t.show_similarity(str1, str2)
+print("====\n")
+    
+```
+
 ## Code Examples & Tutorials
 - You will find working examples under [pyrxnlp/examples/](https://github.com/RxNLP/PyRXNLP/tree/master/pyrxnlp/examples)
 
