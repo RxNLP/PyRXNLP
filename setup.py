@@ -34,7 +34,7 @@ setup(
     keywords=['Sentence Clustering', 'Topics Extraction',
               'Opinosis Summarization', 'Text Similarity'],
     install_requires=[
-        'requests==2.9.1'
+        'requests==2.20.0'
     ],
     include_package_data=True,
     entry_points={
